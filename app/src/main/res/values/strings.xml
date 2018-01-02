@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">EncuestApp</string>
+    <string name="title">¿Qué comiste hoy?</string>
+    <string name="survey_button">Iniciar Encuesta</string>
+    <string name="title_activity_principal">Principal</string>
+    <string name="title_activity_home">Inicio</string>
+    <string name="title_activity_navigation_drawer">EncuestApp</string>
+
+    <string name="navigation_drawer_open">Abrir navegación</string>
+    <string name="navigation_drawer_close">Cerrar nevagación</string>
+
+    <string name="action_settings">Ajustes</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

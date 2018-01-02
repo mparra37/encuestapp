@@ -1,0 +1,53 @@
+package mx.cicese.encuesta;
+
+
+import android.os.Bundle;
+import android.support.v4.app.DialogFragment;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.RadioButton;
+
+
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class DatosFragment extends Fragment {
+
+
+    public DatosFragment() {
+        // Required empty public constructor
+    }
+
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_datos, container, false);
+    }
+
+    public void onRadioButtonClicked(View view) {
+        // Is the button now checked?
+        boolean checked = ((RadioButton) view).isChecked();
+
+        // Check which radio button was clicked
+        switch(view.getId()) {
+            case R.id.radio_hombre:
+                if (checked)
+                    // Pirates are the best
+                    break;
+            case R.id.radio_mujer:
+                if (checked)
+                    // Ninjas rule
+                    break;
+        }
+    }
+
+//    public void showDatePicker(View v) {
+//        DialogFragment newFragment = new MyDatePickerFragment();
+//        newFragment.show(getSupportFragmentManager(), "date picker");
+//    }
+
+}
